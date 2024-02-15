@@ -10,6 +10,142 @@ cnv.height = 400;
 ctx.fillStyle = "darkblue";
 ctx.fillRect(0, 0, 500, 400);
 
+// Stars
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(20, 45, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(200, 90, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(45, 75, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(250, 65, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(300, 45, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(30, 65, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(150, 45, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(100, 55, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(50, 5, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(350, 5, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(50, 55, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(320, 15, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(90, 45, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(370, 75, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(360, 5, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(240, 45, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(500, 5, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(10, 85, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(55, 120, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(90, 105, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(95, 130, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(95, 15, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(750, 5, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(230, 10, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(480, 80, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(450, 90, 3, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(50, 5, 3, 0, 2 * Math.PI);
+ctx.fill();
+
 // Moon
 ctx.fillStyle = "silver";
 ctx.beginPath();
@@ -47,9 +183,14 @@ ctx.beginPath();
 ctx.arc(430, 40, 4, 0, 2 * Math.PI);
 ctx.fill();
 
+// Mountain
+ctx.fillStyle = "grey";
+
 // Snowy floor
 ctx.fillStyle = "white";
 ctx.fillRect(0, 330, 500, 400);
+
+// Trees
 
 // Cabin - main shape
 ctx.fillStyle = "maroon";
@@ -224,6 +365,7 @@ ctx.lineTo(375, 265);
 ctx.lineTo(365, 250);
 ctx.fill();
 
+// Text on Sign
 ctx.fillStyle = "black";
 ctx.font = "Georgia";
 ctx.fillText("Proud", 440, 300);
@@ -231,5 +373,9 @@ ctx.fillText("Home", 440, 310);
 ctx.fillText("Owner", 440, 320);
 
 ctx.fillStyle = "black";
-ctx.font = "20px Arial";
-ctx.fillText("Moses Luri", 390, 390);
+ctx.font = "15px Arial";
+ctx.fillText("Art by Moses", 390, 390);
+
+// Snowman
+var SnowmanImg = document.getElementById("TheSnowyMan");
+ctx.drawImage(SnowmanImg, 10, 210, 180, 180);
